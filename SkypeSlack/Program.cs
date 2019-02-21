@@ -26,6 +26,10 @@ namespace SkypeBot
             string dbname = "s4l-ashur.eu.db";
             string convo = "C19:I2FzaHVyLmV1LyRqYW4ubWFuZWs7N2RhOTczY2U1ODliYTFkMQ==%";
 
+
+            //Ensure that DB is poppulated with data
+            //That means a ton of scroll-ups using AutoIt script in the desired chat window
+            //there is .au3 script in the sources
             using (var conn = new SQLiteConnection($@"Data Source=c:\Users\{user}\AppData\Local\Packages\Microsoft.SkypeApp_kzf8qxf38zg5c\LocalState\{dbname};Version=3;New=False;Compress=True;"))
             {
                 conn.Open();
